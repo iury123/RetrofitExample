@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".SignInFragment">
+
+    <data>
+        <import type="com.example.iurymiguel.retrofitexample.SignInFragment"/>
+        <variable name="fragment" type="SignInFragment"/>
+    </data>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+    >
+
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+        >
+
+
+            <TextView
+                    android:text="Login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    android:id="@+id/textSignUpLabel" android:layout_marginTop="60dp"
+                    app:layout_constraintTop_toTopOf="parent" android:textSize="30sp"
+                    app:layout_constraintHorizontal_bias="0.501"/>
+            <TextView
+                    android:text="Email:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textEmailLabel" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="40dp" android:layout_marginTop="48dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textSignUpLabel" android:textSize="18sp"/>
+            <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/editEmail"
+                    app:layout_constraintStart_toStartOf="@+id/textEmailLabel" android:layout_marginTop="4dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textEmailLabel" android:layout_marginEnd="32dp"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView
+                    android:text="Senha:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textPasswordLabel" app:layout_constraintStart_toStartOf="@+id/editEmail"
+                    app:layout_constraintTop_toBottomOf="@+id/editEmail"
+                    android:layout_marginTop="16dp" android:textSize="18sp"/>
+            <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/editPassword"
+                    app:layout_constraintStart_toStartOf="@+id/textPasswordLabel"
+                    app:layout_constraintTop_toBottomOf="@+id/textPasswordLabel" android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toEndOf="@+id/editEmail"/>
+            <Button
+                    android:text="Entrar"
+                    android:onClick="@{() -> fragment.signIn()}"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonSignIn" app:layout_constraintStart_toStartOf="@+id/editPassword"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/editPassword"
+                    app:layout_constraintEnd_toEndOf="@+id/editPassword"/>
+            <Button
+                    android:text="Registrar"
+                    android:onClick="@{()->fragment.goToRegisterPage()}"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonGoToRegisterPage" app:layout_constraintStart_toStartOf="@+id/buttonSignIn"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/buttonSignIn"
+                    app:layout_constraintEnd_toEndOf="@+id/buttonSignIn"/>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</layout>

@@ -1,7 +1,8 @@
-package com.example.iurymiguel.retrofitexample
+package com.example.iurymiguel.retrofitexample.views.authentication
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.iurymiguel.retrofitexample.R
 
 class MainActivity : AppCompatActivity() {
 

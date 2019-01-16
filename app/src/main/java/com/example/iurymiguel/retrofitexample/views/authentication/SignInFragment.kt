@@ -1,4 +1,4 @@
-package com.example.iurymiguel.retrofitexample
+package com.example.iurymiguel.retrofitexample.views.authentication
 import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -6,8 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
+import com.example.iurymiguel.retrofitexample.R
 import com.example.iurymiguel.retrofitexample.databinding.FragmentSignInBinding
-import com.example.iurymiguel.retrofitexample.pojos.LoggedUser
+import com.example.iurymiguel.retrofitexample.models.LoggedUser
 import com.example.iurymiguel.retrofitexample.viewmodels.AuthenticationViewModel
 import kotlinx.android.synthetic.main.fragment_sign_in.*
 import org.koin.android.viewmodel.ext.android.viewModel
@@ -32,8 +33,10 @@ class SignInFragment : Fragment() {
 
     fun signIn() {
 
-        val loggedUser = LoggedUser(editPassword.text.toString(),
-            editPassword.text.toString())
+        val loggedUser = LoggedUser(
+            editPassword.text.toString(),
+            editPassword.text.toString()
+        )
     }
 
 

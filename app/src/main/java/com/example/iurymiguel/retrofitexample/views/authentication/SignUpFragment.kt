@@ -1,4 +1,4 @@
-package com.example.iurymiguel.retrofitexample
+package com.example.iurymiguel.retrofitexample.views.authentication
 
 import android.databinding.DataBindingUtil
 import android.os.Bundle
@@ -6,9 +6,10 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.iurymiguel.retrofitexample.R
 import com.example.iurymiguel.retrofitexample.databinding.FragmentSignUpBinding
 import com.example.iurymiguel.retrofitexample.interfaces.ConnectionCallbacks
-import com.example.iurymiguel.retrofitexample.pojos.LoggedUser
+import com.example.iurymiguel.retrofitexample.models.LoggedUser
 import com.example.iurymiguel.retrofitexample.providers.ProgressDialogProvider
 import com.example.iurymiguel.retrofitexample.viewmodels.AuthenticationViewModel
 import kotlinx.android.synthetic.main.fragment_sign_in.*

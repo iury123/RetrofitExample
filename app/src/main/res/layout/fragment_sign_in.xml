@@ -2,11 +2,11 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
-        tools:context=".SignInFragment">
+        tools:context=".views.authentication.SignInFragment">
 
     <data>
-        <import type="com.example.iurymiguel.retrofitexample.SignInFragment"/>
-        <variable name="fragment" type="SignInFragment"/>
+        <import type="com.example.iurymiguel.retrofitexample.views.authentication.SignInFragment"/>
+        <variable name="fragment" type="com.example.iurymiguel.retrofitexample.views.authentication.SignInFragment"/>
     </data>
 
     <ScrollView android:layout_width="match_parent"

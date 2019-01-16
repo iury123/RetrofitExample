@@ -2,11 +2,11 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
-        tools:context=".SignUpFragment">
+        tools:context=".views.authentication.SignUpFragment">
 
     <data>
-        <import type="com.example.iurymiguel.retrofitexample.SignUpFragment"/>
-        <variable name="fragment" type="SignUpFragment"/>
+        <import type="com.example.iurymiguel.retrofitexample.views.authentication.SignUpFragment"/>
+        <variable name="fragment" type="com.example.iurymiguel.retrofitexample.views.authentication.SignUpFragment"/>
     </data>
 
 
